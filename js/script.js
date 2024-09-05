@@ -20,4 +20,11 @@ window.onscroll = () =>{
     //stickyheader
     let header=document.querySelector('header');
     header.classList.toggle('sticky',window.scrollY > 100);
+
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        navbar.classList.toggle('active');
+    };
 }
